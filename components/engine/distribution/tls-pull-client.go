@@ -17,7 +17,7 @@ func TLS_client_pel(image_name string) bool{
 	return false
     }
     config := tls.Config{Certificates: []tls.Certificate{cert}, InsecureSkipVerify: true}
-    conn, err := tls.Dial("tcp", "129.254.170.217:50000", &config)
+    conn, err := tls.Dial("tcp", "129.254.170.216:50000", &config)
     if err != nil {
         log.Fatalf("client: dial: %s", err)
 	return false
